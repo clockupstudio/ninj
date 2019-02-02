@@ -1,0 +1,11 @@
+# Generated files by Unity.
+ninj.sln
+tsconfig.json
+
+# Unity folders.
+Tiny
+TinyExport
+Library
+Assets/TinyCache*
+Temp
+Logs

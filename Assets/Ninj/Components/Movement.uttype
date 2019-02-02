@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "d3e83f18fb674d00828dfefde47e8db7",
+    "Name": "Movement",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "Documentation": {
+        "Summary": "Movement configuration"
+    },
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "ca2f102b777d40f1a4f3318e20337f54",
+        "Name": "speed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" }
+    }
+}]

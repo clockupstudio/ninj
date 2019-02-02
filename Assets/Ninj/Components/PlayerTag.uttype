@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "11280c81394f4b5ca72560f2e1b313dd",
+    "Name": "PlayerTag",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }
+    }
+}]

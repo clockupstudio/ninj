@@ -1,0 +1,80 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "1743ecd395724b1ab180c618004757f9",
+    "Name": "MainGroup",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "9980707e3b974886a305eeb75cf25b5a", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "9980707e3b974886a305eeb75cf25b5a",
+    "Name": "Camera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.7803922,
+                    "g": 0.9411765,
+                    "b": 0.8470588,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            },
+            "depth": -1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "04a03b777af14c38815d73518bdc3d1c",
+    "Name": "Player",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.2627451,
+                    "g": 0.3215686,
+                    "b": 0.2352941,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
+        "Properties": {
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }
+    }]
+}]
