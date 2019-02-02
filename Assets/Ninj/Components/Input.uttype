@@ -1,0 +1,45 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "87628cb1af934db09cf2214eb5c32cb1",
+    "Name": "Input",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "f49db502252a4a5989a0c8a8e1fae075",
+        "Name": "left",
+        "FieldType": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "8ad8de75fed244beaeaa109469f8f145",
+        "Name": "right",
+        "FieldType": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" },
+        "Properties": {
+            "left": {
+                "$TypeId": 8,
+                "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                "Id": "d4d65f072304996f27f7cf4e1f3c5471",
+                "Name": "A",
+                "Value": 97
+            },
+            "right": {
+                "$TypeId": 8,
+                "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                "Id": "c8e097b889c04daffcf2e6a44158970a",
+                "Name": "D",
+                "Value": 100
+            }
+        }
+    }
+}]

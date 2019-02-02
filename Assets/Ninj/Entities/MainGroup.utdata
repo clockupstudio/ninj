@@ -76,5 +76,9 @@
         }
     }, {
         "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }
+    }, {
+        "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" }
+    }, {
+        "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" }
     }]
 }]
