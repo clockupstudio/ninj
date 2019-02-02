@@ -22,6 +22,22 @@
         "Visibility": 0,
         "EditorOnly": false,
         "Versioned": true
+    }, {
+        "Id": "adb70d52014a4db18a7c3397f3dc0473",
+        "Name": "jump",
+        "FieldType": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "88306c36059b4441874776d12ae0d35c",
+        "Name": "attack",
+        "FieldType": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
         "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" },
@@ -39,6 +55,20 @@
                 "Id": "c8e097b889c04daffcf2e6a44158970a",
                 "Name": "D",
                 "Value": 100
+            },
+            "jump": {
+                "$TypeId": 8,
+                "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                "Id": "69fca39b09c4acd90106a580b3a58d8c",
+                "Name": "Space",
+                "Value": 32
+            },
+            "attack": {
+                "$TypeId": 8,
+                "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                "Id": "b37944d6a63f55d2711f7cc4e97cde17",
+                "Name": "Return",
+                "Value": 13
             }
         }
     }
