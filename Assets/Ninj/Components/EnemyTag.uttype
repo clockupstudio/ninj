@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "0a3a55f9806d4084b684cfb6e7c10209",
+    "Name": "EnemyTag",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "0a3a55f9806d4084b684cfb6e7c10209", "Name": "EnemyTag" }
+    }
+}]

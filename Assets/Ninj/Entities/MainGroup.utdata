@@ -6,7 +6,8 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "9980707e3b974886a305eeb75cf25b5a", "Name": "Camera" },
-        { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" }
+        { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" },
+        { "$TypeId": 9, "Id": "b890aaa0ef164feb89c508eff8760604", "Name": "Enemy" }
     ]
 },
 {
@@ -70,6 +71,19 @@
             }
         }
     }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -0.5,
+                    "y": -0.5,
+                    "width": 1,
+                    "height": 1
+                }
+            }
+        }
+    }, {
         "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
         "Properties": {
             "speed": 1
@@ -80,5 +94,63 @@
         "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" }
     }, {
         "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "b890aaa0ef164feb89c508eff8760604",
+    "Name": "Enemy",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {}
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1.862
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -0.5,
+                    "y": -0.5,
+                    "width": 1,
+                    "height": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
+        "Properties": {
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "0a3a55f9806d4084b684cfb6e7c10209", "Name": "EnemyTag" }
+    }, {
+        "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" },
+        "Properties": {
+            "direction": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": -1
+                }
+            }
+        }
     }]
 }]
