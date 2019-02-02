@@ -105,13 +105,47 @@
         "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" }
     }, {
         "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" }
+    }, {
+        "Type": { "Id": "a2a609177ab94074994d4b62bea37dcf", "Name": "PlayerActions" },
+        "Properties": {
+            "stand": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "move": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300002, "Type": 3 }
+                ]
+            },
+            "attack": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300004, "Type": 3 }
+                ]
+            }
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "frameRate": 2
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" },
+            "speed": 1
+        }
     }]
 },
 {
     "$TypeId": 5,
     "Id": "b890aaa0ef164feb89c508eff8760604",
     "Name": "Enemy",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 0,
     "Components": [{

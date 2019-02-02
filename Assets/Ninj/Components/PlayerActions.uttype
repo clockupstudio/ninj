@@ -1,0 +1,37 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "a2a609177ab94074994d4b62bea37dcf",
+    "Name": "PlayerActions",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "df3c1f7b5e734a85acc90ada68875223",
+        "Name": "stand",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "ac1e5edd89d341ef877a9954f0b46784",
+        "Name": "move",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "a4e32ea529ef42948e91193c97bc7a78",
+        "Name": "attack",
+        "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "a2a609177ab94074994d4b62bea37dcf", "Name": "PlayerActions" }
+    }
+}]
