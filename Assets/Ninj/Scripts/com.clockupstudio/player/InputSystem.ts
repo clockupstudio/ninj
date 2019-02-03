@@ -1,12 +1,12 @@
 namespace com.clockupstudio.player {
 
     // InputMovementSystem detect direction base on input.
-    export class InputSystem extends ut.ComponentSystem {
+    export class InputMovementSystem extends ut.ComponentSystem {
 
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, game.Input, game.InputDirection, game.InputAttack],
-                (_, input, inputDirection, inputAttack) => {
+                [game.PlayerTag, game.Input, game.InputDirection],
+                (_, input, inputDirection) => {
                     let dir = inputDirection.direction
                     if (ut.Runtime.Input.getKey(input.left)) {
                         [dir.x, dir.y] = [-1,0]
@@ -16,12 +16,6 @@ namespace com.clockupstudio.player {
                         [dir.x, dir.y] = [0, 0]
                     }
                     inputDirection.direction = dir
-
-                    if (ut.Runtime.Input.getKey(input.attack)) {
-                        inputAttack.pressed = true;
-                    } else {
-                        inputAttack.pressed = false;
-                    }
                 }
             )
         }

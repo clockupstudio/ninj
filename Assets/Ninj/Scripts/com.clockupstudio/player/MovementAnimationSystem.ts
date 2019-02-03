@@ -4,13 +4,15 @@ namespace com.clockupstudio.player {
 
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, game.InputDirection, game.PlayerActions, ut.Core2D.Sprite2DSequence],
-                (_, inputDirection, playerActions, sprite2DSequence) => {
+                [game.PlayerTag, game.InputDirection, game.InputAttack, game.PlayerActions, ut.Core2D.Sprite2DSequence],
+                (_, inputDirection, inputAttack, playerActions, sprite2DSequence) => {
                     let sprites = sprite2DSequence.sprites;
                     let dir = inputDirection.direction;
 
                     // assume player are moving.
-                    if (dir.x != 0) {
+                    if (inputAttack.pressed) {
+                        sprites = playerActions.attack;
+                    } else if (dir.x != 0) {
                         sprites = playerActions.move;
                     } else {
                         sprites = playerActions.stand;
