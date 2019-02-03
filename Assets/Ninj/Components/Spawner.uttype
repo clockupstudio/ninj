@@ -1,0 +1,57 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "0e8a356af3d14c96a0bd20922787ea20",
+    "Name": "Spawner",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "feb3dd2fdf3545dd8f0b030f8cd87808",
+        "Name": "delay",
+        "Documentation": {
+            "Summary": "Spawn every <delay> seconds."
+        },
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "1ec751abaf9f468faf2807dd7874854f",
+        "Name": "time",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "0ddc0a408d47413990f18c967a4fda16",
+        "Name": "positions",
+        "Documentation": {
+            "Summary": "Positions that want to spawn."
+        },
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "8e352e51f3634e34bbb403fd6aba2ae5",
+        "Name": "group",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "0e8a356af3d14c96a0bd20922787ea20", "Name": "Spawner" },
+        "Properties": {
+            "positions": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" }
+            },
+            "group": "Entity group that want to spawn."
+        }
+    }
+}]
