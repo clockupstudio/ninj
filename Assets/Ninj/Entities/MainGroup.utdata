@@ -49,7 +49,7 @@
     "Name": "Player",
     "Enabled": true,
     "Static": false,
-    "Layer": 0,
+    "Layer": 9,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
@@ -98,7 +98,7 @@
     }, {
         "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
         "Properties": {
-            "speed": 1
+            "speed": 2
         }
     }, {
         "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }

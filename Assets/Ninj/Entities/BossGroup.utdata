@@ -14,7 +14,7 @@
     "Name": "Boss",
     "Enabled": true,
     "Static": false,
-    "Layer": 0,
+    "Layer": 8,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
