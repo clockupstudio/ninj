@@ -9,3 +9,7 @@ Library
 Assets/TinyCache*
 Temp
 Logs
+
+# Visual Stidio
+.vs
+.vscode
