@@ -10,6 +10,8 @@ namespace game {
 
             if (this.state == "INIT") {
                 ut.EntityGroup.instantiate(this.world, 'game.GameScene');
+                ut.EntityGroup.instantiate(this.world, 'game.BossGroup');
+                ut.EntityGroup.instantiate(this.world, 'game.EnemyGroup');
                 this.state = "PLAY";
             }
 
@@ -20,7 +22,7 @@ namespace game {
                     ut.EntityGroup.destroyAll(this.world, 'game.BossGroup');
                     ut.EntityGroup.destroyAll(this.world, 'game.EnemyGroup');
 
-                    ut.EntityGroup.instantiate(this.world, 'game.GameOverScreen');
+                    ut.EntityGroup.instantiate(this.world, 'game.GameOverScene');
 
                     this.world.forEach([ut.Core2D.Camera2D], (camera) => {
                         camera.backgroundColor = new ut.Core2D.Color(67 / 255, 82 / 255, 61 / 255, 1);
@@ -33,7 +35,7 @@ namespace game {
             if (this.state == "GAMEOVER") {
 
                 if (ut.Runtime.Input.getKeyUp(this.restartKey)) {
-                    ut.EntityGroup.destroyAll(this.world, 'game.GameOverScreen');
+                    ut.EntityGroup.destroyAll(this.world, 'game.GameOverScene');
 
                     ut.EntityGroup.instantiate(this.world, 'game.GameScene');
                     ut.EntityGroup.instantiate(this.world, 'game.BossGroup');
