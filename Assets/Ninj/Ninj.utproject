@@ -61,7 +61,7 @@
         { "Id": "c0190b842f48427282f5af2116c2d04d", "Name": "Main" },
         { "Id": "36f73ad23c8a63c53fa510f0621474f5", "Name": "UTiny.HitBox2D" }
     ],
-    "StartupEntityGroup": { "Id": "1743ecd395724b1ab180c618004757f9", "Name": "NewEntityGroup" }
+    "StartupEntityGroup": { "Id": "1743ecd395724b1ab180c618004757f9", "Name": "MainGroup" }
 },
 {
     "$TypeId": 5,

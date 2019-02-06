@@ -1,0 +1,32 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "91a26991e5bc4c7290963fffc3571936",
+    "Name": "GameOverScreen",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "392d175fdf3e406c973e5f6db84d963b", "Name": "GameOverText" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "392d175fdf3e406c973e5f6db84d963b",
+    "Name": "GameOverText",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "1986c04fd50c1407396304ef3a669742", "FileId": 21300000, "Type": 3 }
+        }
+    }]
+}]
