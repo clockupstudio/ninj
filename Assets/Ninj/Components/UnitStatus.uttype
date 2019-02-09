@@ -6,6 +6,15 @@
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Component",
+    "Fields": [{
+        "Id": "b21c0beb8e684403b94dd8c0139d7d32",
+        "Name": "health",
+        "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
     "DefaultValue": {
         "Type": { "Id": "d520197343d44a1d9b06974e2d168958", "Name": "UnitStatus" }
     }
