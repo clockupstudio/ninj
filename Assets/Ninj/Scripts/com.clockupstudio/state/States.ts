@@ -3,7 +3,7 @@ namespace game {
     export interface GameState {
         OnUpdate(world: ut.World): GameState;
     }
-    
+
     export class InitPlay implements GameState {
 
         OnUpdate(world: ut.World): GameState {
@@ -61,7 +61,7 @@ namespace game {
                 ut.EntityGroup.destroyAll(world, 'game.GameOverScene');
                 return new InitPlay();
             }
-            
+
             return this;
         }
 
