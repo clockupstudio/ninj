@@ -4,9 +4,11 @@ namespace com.clockupstudio.player {
 
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults],
-                (_, overlapResults) => {
+                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults, game.UnitStatus],
+                (_, overlapResults, status) => {
                     console.log(overlapResults.overlaps)
+
+                    status.health -= 1;
                 }
             )
         }

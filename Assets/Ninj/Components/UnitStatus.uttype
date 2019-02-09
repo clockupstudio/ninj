@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "d520197343d44a1d9b06974e2d168958",
+    "Name": "UnitStatus",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "d520197343d44a1d9b06974e2d168958", "Name": "UnitStatus" }
+    }
+}]

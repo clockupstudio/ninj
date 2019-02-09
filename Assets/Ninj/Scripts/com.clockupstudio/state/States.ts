@@ -21,10 +21,17 @@ namespace game {
 
     export class PlayState implements GameState {
         OnUpdate(world: ut.World): GameState {
-            if (ut.Runtime.Input.getMouseButtonDown(0)) {
-                return new InitGameOver();
-            }
-            return this;
+            let nextState: GameState = this;
+
+            world.forEach(
+                [game.PlayerTag, game.UnitStatus],
+                (_, status) => {
+                    if (status.health <= 0) {
+                        nextState = new InitGameOver();
+                    }
+                }
+            )
+            return nextState;
         }
     }
 
