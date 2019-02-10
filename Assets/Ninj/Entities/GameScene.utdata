@@ -115,6 +115,11 @@
             "layer": 1413773243,
             "order": 4
         }
+    }, {
+        "Type": { "Id": "d520197343d44a1d9b06974e2d168958", "Name": "UnitStatus" },
+        "Properties": {
+            "health": 1
+        }
     }]
 },
 {
