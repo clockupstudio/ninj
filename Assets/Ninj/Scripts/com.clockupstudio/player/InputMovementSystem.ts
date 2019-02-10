@@ -17,7 +17,7 @@ namespace com.clockupstudio.player {
                     }
                     inputDirection.direction = dir
 
-                    if (ut.Runtime.Input.getKey(input.attack)) {
+                    if (ut.Runtime.Input.getKeyUp(input.attack)) {
                         inputAttack.pressed = true;
                     } else {
                         inputAttack.pressed = false;
