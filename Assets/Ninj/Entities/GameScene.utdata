@@ -96,6 +96,12 @@
                 "Items": [
                     { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300004, "Type": 3 }
                 ]
+            },
+            "hit": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "a192146d8a8034931a248b5b56f97886", "FileId": 21300010, "Type": 3 }
+                ]
             }
         }
     }, {
@@ -118,7 +124,7 @@
     }, {
         "Type": { "Id": "d520197343d44a1d9b06974e2d168958", "Name": "UnitStatus" },
         "Properties": {
-            "health": 1
+            "health": 100
         }
     }]
 },
@@ -132,7 +138,7 @@
     "Components": [{
         "Type": { "Id": "0e8a356af3d14c96a0bd20922787ea20", "Name": "Spawner" },
         "Properties": {
-            "delay": 2,
+            "delay": 10,
             "positions": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Items": [{
@@ -155,7 +161,7 @@
     "$TypeId": 5,
     "Id": "c4a56e19d2b14ebd9326a9fa6ba71904",
     "Name": "BossSpawner",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 0,
     "Components": [{

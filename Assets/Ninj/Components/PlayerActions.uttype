@@ -34,7 +34,7 @@
         "Id": "e95473f34b8c422ba5b0284e242024e5",
         "Name": "hit",
         "FieldType": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
-        "Array": false,
+        "Array": true,
         "Visibility": 0,
         "EditorOnly": false,
         "Versioned": true
