@@ -9,6 +9,9 @@ namespace com.clockupstudio.player {
                     console.log(overlapResults.overlaps)
 
                     status.health -= 1;
+
+                    console.log(`Setting damaged before=${status.damaged}`);
+                    status.damaged = true;
                 }
             )
         }
