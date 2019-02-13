@@ -4,13 +4,17 @@ namespace com.clockupstudio.player {
 
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults, game.UnitStatus, ut.Core2D.TransformLocalPosition],
-                (_, overlapResults, status, transform) => {
+                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults, game.UnitStatus, ut.Core2D.TransformLocalPosition, game.InputDirection],
+                (_, overlapResults, status, transform, direction) => {
                     status.health -= 1;
                     status.damaged = true;
-                    transform.position = new Vector3(transform.position.x-1, transform.position.y, transform.position.z)
+                    transform.position = this.calculateReactionDirection(transform.position, direction.direction);
                 }
             )
+        }
+
+        private calculateReactionDirection(position: Vector3, direction: Vector2): Vector3 {
+            return new Vector3(position.x+(-1*direction.x), position.y, position.z);
         }
     }
 }
