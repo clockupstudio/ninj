@@ -1,4 +1,4 @@
-namespace game {
+namespace com.clockupstudio.state {
 
     @ut.executeAfter(ut.Shared.UserCodeStart)
     export class GameStateManager extends ut.ComponentSystem {

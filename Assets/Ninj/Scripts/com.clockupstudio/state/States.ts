@@ -1,11 +1,10 @@
-namespace game {
+namespace com.clockupstudio.state {
 
     export interface GameState {
         OnUpdate(world: ut.World): GameState;
     }
 
     export class InitPlay implements GameState {
-
         OnUpdate(world: ut.World): GameState {
             ut.EntityGroup.instantiate(world, 'game.GameScene');
             ut.EntityGroup.instantiate(world, 'game.BossGroup');
@@ -66,6 +65,4 @@ namespace game {
         }
 
     }
-
-
 }
