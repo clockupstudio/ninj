@@ -14,7 +14,7 @@ namespace com.clockupstudio.player {
                     if (this.state == "ENTER_HIT") {
                         sprites = playerActions.hit;
                         this.state = "HITTING";
-                        setTimeout((s: game.UnitStatus) => {
+                        setTimeout(() => {
                             this.world.forEach(
                                 [game.PlayerTag, game.UnitStatus],
                                 (_, u) => {
