@@ -1,12 +1,12 @@
 namespace com.clockupstudio.player {
-    export interface PlayerState {
-        OnUpdate(world: ut.World): PlayerState;
+    export interface PlayerAnimationState {
+        OnUpdate(world: ut.World): PlayerAnimationState;
     }
 
-    export class NormalState implements PlayerState {
-        OnUpdate(world: ut.World): PlayerState {
+    export class NormalState implements PlayerAnimationState {
+        OnUpdate(world: ut.World): PlayerAnimationState {
 
-            let nextState: PlayerState = this;
+            let nextState: PlayerAnimationState = this;
             world.forEach(
                 [game.PlayerTag, game.InputDirection, game.InputAttack, game.PlayerActions, ut.Core2D.Sprite2DSequence, game.UnitStatus],
                 (_, inputDirection, inputAttack, playerActions, sprite2DSequence, unitStatus) => {
@@ -33,8 +33,8 @@ namespace com.clockupstudio.player {
         }
     }
 
-    export class EnterHitState implements PlayerState {
-        OnUpdate(world: ut.World): PlayerState {
+    export class EnterHitState implements PlayerAnimationState {
+        OnUpdate(world: ut.World): PlayerAnimationState {
             world.forEach(
                 [game.PlayerTag, game.PlayerActions, ut.Core2D.Sprite2DSequence],
                 (_, playerActions, sprite2DSequence) => {
@@ -53,9 +53,9 @@ namespace com.clockupstudio.player {
         }
     }
 
-    export class HittingState implements PlayerState {
-        OnUpdate(world: ut.World): PlayerState {
-            let nextState: PlayerState = this;
+    export class HittingState implements PlayerAnimationState {
+        OnUpdate(world: ut.World): PlayerAnimationState {
+            let nextState: PlayerAnimationState = this;
 
             world.forEach(
                 [game.PlayerTag, game.UnitStatus],

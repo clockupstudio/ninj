@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "4b78ac7c17a0458294730dca36c4b2a0",
+    "Name": "LifebarRenderer",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "f4b1c7b1210c48019af30833c945bf22",
+        "Name": "points",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "4b78ac7c17a0458294730dca36c4b2a0", "Name": "LifebarRenderer" }
+    }
+}]

@@ -6,6 +6,10 @@ namespace com.clockupstudio.player {
             this.world.forEach(
                 [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults, game.UnitStatus, ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale],
                 (_, overlapResults, status, position, scale) => {
+                    if(status.damaged){
+                        return;
+                    }
+                    
                     status.health -= 1;
                     status.damaged = true;
                     position.position = this.calculateReactionDirection(position.position, scale.scale);
