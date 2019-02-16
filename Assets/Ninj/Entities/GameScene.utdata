@@ -6,6 +6,7 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" },
+        { "$TypeId": 9, "Id": "8308e6b72a544b5aa48acd49d2f237ae", "Name": "Ground" },
         { "$TypeId": 9, "Id": "5fb28d91e03d48aab9745f9dc4503c81", "Name": "EnemySpawner" },
         { "$TypeId": 9, "Id": "c4a56e19d2b14ebd9326a9fa6ba71904", "Name": "BossSpawner" },
         { "$TypeId": 9, "Id": "75539a8bf1814fb089562e72218f9abb", "Name": "Lifebar" },
@@ -134,6 +135,91 @@
 },
 {
     "$TypeId": 5,
+    "Id": "8308e6b72a544b5aa48acd49d2f237ae",
+    "Name": "Ground",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "0d28ae8f9a388c9ed18b5c48668c08ab", "Name": "Tilemap" },
+        "Properties": {
+            "cellSize": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0
+                }
+            },
+            "tiles": {
+                "Type": { "Id": "38cddb9154a8669901635780ed05188b", "Name": "TileData" },
+                "Items": [{
+                    "Type": { "Id": "38cddb9154a8669901635780ed05188b", "Name": "TileData" },
+                    "Properties": {
+                        "position": {
+                            "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                            "Properties": {
+                                "x": -1,
+                                "y": -5
+                            }
+                        },
+                        "tile": { "$TypeId": 10, "Guid": "6a5bac4a4e967479b8121d7de5ac9ae7", "FileId": 11400000, "Type": 2 }
+                    }
+                }, {
+                    "Type": { "Id": "38cddb9154a8669901635780ed05188b", "Name": "TileData" },
+                    "Properties": {
+                        "position": {
+                            "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                            "Properties": {
+                                "y": -5
+                            }
+                        },
+                        "tile": { "$TypeId": 10, "Guid": "6a5bac4a4e967479b8121d7de5ac9ae7", "FileId": 11400000, "Type": 2 }
+                    }
+                }, {
+                    "Type": { "Id": "38cddb9154a8669901635780ed05188b", "Name": "TileData" },
+                    "Properties": {
+                        "position": {
+                            "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                            "Properties": {
+                                "x": -1,
+                                "y": -4
+                            }
+                        },
+                        "tile": { "$TypeId": 10, "Guid": "6a5bac4a4e967479b8121d7de5ac9ae7", "FileId": 11400000, "Type": 2 }
+                    }
+                }, {
+                    "Type": { "Id": "38cddb9154a8669901635780ed05188b", "Name": "TileData" },
+                    "Properties": {
+                        "position": {
+                            "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                            "Properties": {
+                                "y": -4
+                            }
+                        },
+                        "tile": { "$TypeId": 10, "Guid": "6a5bac4a4e967479b8121d7de5ac9ae7", "FileId": 11400000, "Type": 2 }
+                    }
+                }]
+            }
+        }
+    }, {
+        "Type": { "Id": "e370f277f1ee85049c5156a2a1858b78", "Name": "TilemapRenderer" }
+    }, {
+        "Type": { "Id": "d499c9b7a27c63edba34d6e61bf86837", "Name": "TilemapRechunk" }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }]
+},
+{
+    "$TypeId": 5,
     "Id": "5fb28d91e03d48aab9745f9dc4503c81",
     "Name": "EnemySpawner",
     "Enabled": true,
@@ -254,7 +340,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 1
                 }
             }
         }
@@ -296,7 +382,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 1
                 }
             }
         }
@@ -338,7 +424,7 @@
                     "r": 1,
                     "g": 1,
                     "b": 1,
-                    "a": 0
+                    "a": 1
                 }
             }
         }
