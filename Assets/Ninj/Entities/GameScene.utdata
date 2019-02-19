@@ -12,7 +12,8 @@
         { "$TypeId": 9, "Id": "75539a8bf1814fb089562e72218f9abb", "Name": "Lifebar" },
         { "$TypeId": 9, "Id": "a57145aab3df481095ee776fabbe2258", "Name": "Life_00" },
         { "$TypeId": 9, "Id": "09b805c7f4194d39acfd66e35a36e89e", "Name": "Life_01" },
-        { "$TypeId": 9, "Id": "4dc9d2b377e34063a7eecf2edfc11245", "Name": "Life_02" }
+        { "$TypeId": 9, "Id": "4dc9d2b377e34063a7eecf2edfc11245", "Name": "Life_02" },
+        { "$TypeId": 9, "Id": "1a5df38cb5fe4afe8c72678ecad6b966", "Name": "GroundPhysx" }
     ]
 },
 {
@@ -427,6 +428,52 @@
                     "a": 1
                 }
             }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "1a5df38cb5fe4afe8c72678ecad6b966",
+    "Name": "GroundPhysx",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "8308e6b72a544b5aa48acd49d2f237ae", "Name": "Ground" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -4
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 2,
+                    "y": 2,
+                    "z": 2
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" }
+    }, {
+        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
+        "Properties": {
+            "friction": 1
         }
     }]
 }]

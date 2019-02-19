@@ -60,7 +60,8 @@
         { "Id": "ce3f1bd7050540b70d450a606e226ea2", "Name": "UTiny.Shared" },
         { "Id": "c0190b842f48427282f5af2116c2d04d", "Name": "Main" },
         { "Id": "36f73ad23c8a63c53fa510f0621474f5", "Name": "UTiny.HitBox2D" },
-        { "Id": "8c6be6e8b11c20a446e356fb3e17ffb1", "Name": "UTiny.Tilemap2D" }
+        { "Id": "8c6be6e8b11c20a446e356fb3e17ffb1", "Name": "UTiny.Tilemap2D" },
+        { "Id": "259902b84b3ed0f7213a1b5e37040709", "Name": "UTiny.Physics2D" }
     ],
     "StartupEntityGroup": { "Id": "1743ecd395724b1ab180c618004757f9", "Name": "MainGroup" }
 },
@@ -78,5 +79,7 @@
             "height": 480,
             "autoSizeToFrame": false
         }
+    }, {
+        "Type": { "Id": "38283a6cef9faa790b5c9936163d59e3", "Name": "Physics2DConfig" }
     }]
 }]

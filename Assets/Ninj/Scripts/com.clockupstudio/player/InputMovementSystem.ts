@@ -1,7 +1,7 @@
 namespace com.clockupstudio.player {
 
     // InputMovementSystem detect direction base on input.
-    export class InputSystem extends ut.ComponentSystem {
+    export class InputMovementSystem extends ut.ComponentSystem {
 
         OnUpdate(): void {
             this.world.forEach(
