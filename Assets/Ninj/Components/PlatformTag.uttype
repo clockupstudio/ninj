@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "5686f064bf4b44b5a207631a1d72956e",
+    "Name": "PlatformTag",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "5686f064bf4b44b5a207631a1d72956e", "Name": "PlatformTag" }
+    }
+}]

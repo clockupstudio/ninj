@@ -11,7 +11,6 @@ namespace com.clockupstudio.player {
                 (_, unitStatus)=>{
                     health = unitStatus.health;
                 });
-            console.log(`Health from lifebar ${health}`)
 
             //Render by health
             this.world.forEach(

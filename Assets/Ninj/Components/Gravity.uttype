@@ -1,0 +1,24 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "1391b75d7bb6405a944d514223411c56",
+    "Name": "Gravity",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "708b7acd24ad4ca58004620bfdc2bcb3",
+        "Name": "fallSpeed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "1391b75d7bb6405a944d514223411c56", "Name": "Gravity" },
+        "Properties": {
+            "fallSpeed": 5
+        }
+    }
+}]
