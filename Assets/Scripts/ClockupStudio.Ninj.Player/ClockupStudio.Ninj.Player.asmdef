@@ -1,0 +1,15 @@
+{
+    "name": "ClockupStudio.Ninj.Player",
+    "references": [
+        "Unity.Entities",
+        "Unity.Collections"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
