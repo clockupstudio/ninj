@@ -9,6 +9,10 @@ Library
 Assets/TinyCache*
 Temp
 Logs
+obj
+
+# .Net
+*.csproj
 
 # Visual Stidio
 .vs
