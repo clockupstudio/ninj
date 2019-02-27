@@ -5,7 +5,7 @@ namespace com.clockupstudio.player {
             this.world.forEach(
                 [game.PlayerTag, ut.Entity, game.Input, ut.Core2D.TransformLocalPosition],
                 (_, entity, input, transform) => {
-                    if (ut.Runtime.Input.getKeyUp(input.jump)) {
+                    if (ut.Runtime.Input.getKey(input.jump)) {
                         let player = this.world.getEntityByName("Player")
                         let transform = this.world.getComponentData(player,ut.Core2D.TransformLocalPosition);
                         
