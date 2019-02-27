@@ -10,6 +10,12 @@ namespace ClockupStudio.Ninj.Player.Components
     public class Movement : MonoBehaviour
     {
         public float Speed;
+        public Vector2 Direction;
+
+        /// <summary>
+        /// Uses to track pressing button from player.
+        /// </summary>
+        public bool PressedMove;
     }
 
 }

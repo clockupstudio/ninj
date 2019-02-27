@@ -6,6 +6,7 @@ using ClockupStudio.Ninj.Player.Components;
 
 namespace ClockupStudio.Ninj.Player.Systems
 {
+    [UpdateAfter(typeof(MoveInputSystem))]
     public class MoveSystem : ComponentSystem
     {
         protected override void OnUpdate()
@@ -13,7 +14,11 @@ namespace ClockupStudio.Ninj.Player.Systems
             var dt = Time.deltaTime;
             ForEach((Movement movement, Transform transform, Rigidbody2D rb) =>
             {
-                rb.MovePosition(new Vector2(transform.position.x + movement.Speed * dt, 0));
+                if (!movement.PressedMove)
+                {
+                    return;
+                }
+                rb.MovePosition(new Vector2(transform.position.x + (movement.Direction.x * movement.Speed * dt), 0));
             });
         }
     }
