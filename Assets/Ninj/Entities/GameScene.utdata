@@ -360,7 +360,7 @@
     "$TypeId": 5,
     "Id": "5fb28d91e03d48aab9745f9dc4503c81",
     "Name": "EnemySpawner",
-    "Enabled": false,
+    "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
@@ -389,7 +389,7 @@
     "$TypeId": 5,
     "Id": "c4a56e19d2b14ebd9326a9fa6ba71904",
     "Name": "BossSpawner",
-    "Enabled": false,
+    "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
