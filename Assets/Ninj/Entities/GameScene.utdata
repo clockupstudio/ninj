@@ -77,7 +77,10 @@
             "speed": 2
         }
     }, {
-        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }
+        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" },
+        "Properties": {
+            "entity": { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" }
+        }
     }, {
         "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" }
     }, {
@@ -151,7 +154,7 @@
     "$TypeId": 5,
     "Id": "dbae7b0ada0a4c0d81770aaed8f6a040",
     "Name": "Slash",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 9,
     "Components": [{
@@ -198,7 +201,7 @@
             "box": {
                 "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
                 "Properties": {
-                    "x": 0,
+                    "x": 0.05,
                     "y": -1,
                     "width": 1,
                     "height": 2
@@ -357,7 +360,7 @@
     "$TypeId": 5,
     "Id": "5fb28d91e03d48aab9745f9dc4503c81",
     "Name": "EnemySpawner",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 0,
     "Components": [{
@@ -386,7 +389,7 @@
     "$TypeId": 5,
     "Id": "c4a56e19d2b14ebd9326a9fa6ba71904",
     "Name": "BossSpawner",
-    "Enabled": true,
+    "Enabled": false,
     "Static": false,
     "Layer": 0,
     "Components": [{

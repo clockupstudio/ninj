@@ -15,7 +15,6 @@ namespace com.clockupstudio.player {
                     }
 
                     rectHitBox2D.box = box
-                    console.log(`expand hit box width to: ${rectHitBox2D.box.width}`)
                 }
             )
         }
