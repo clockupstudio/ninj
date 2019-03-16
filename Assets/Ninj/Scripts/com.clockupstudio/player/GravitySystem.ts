@@ -4,12 +4,8 @@ namespace com.clockupstudio.player {
         OnUpdate(): void {
             const dt = this.scheduler.deltaTime();
             this.world.forEach(
-                [game.PlayerTag, ut.Core2D.TransformLocalPosition, game.Gravity, game.UnitStatus],
-                (_, transform, gravity, unitStatus) =>{
-                    if(unitStatus.grounded){
-                        return;
-                    }
-
+                [game.PlayerTag, ut.Core2D.TransformLocalPosition, game.Gravity, game.Falling],
+                (_, transform, gravity) =>{
                     let pos = transform.position;
                     pos.y -= gravity.fallSpeed * 1 * dt;
                     transform.position = pos;

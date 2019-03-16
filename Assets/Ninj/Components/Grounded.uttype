@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "b54ce2e4a4f845209ffb18e8b1231b9d",
+    "Name": "Grounded",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "b54ce2e4a4f845209ffb18e8b1231b9d", "Name": "Grounded" }
+    }
+}]

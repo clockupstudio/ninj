@@ -141,13 +141,15 @@
     }, {
         "Type": { "Id": "1391b75d7bb6405a944d514223411c56", "Name": "Gravity" },
         "Properties": {
-            "fallSpeed": 4
+            "fallSpeed": 6
         }
     }, {
         "Type": { "Id": "65a8a0caeb76476b9646b8f87bacf6e0", "Name": "Slash" },
         "Properties": {
             "entity": { "$TypeId": 9, "Id": "dbae7b0ada0a4c0d81770aaed8f6a040", "Name": "Slash" }
         }
+    }, {
+        "Type": { "Id": "330ae0c286be4a23aee5a0a2612e8b9f", "Name": "Falling" }
     }]
 },
 {

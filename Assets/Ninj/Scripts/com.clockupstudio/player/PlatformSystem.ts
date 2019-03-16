@@ -4,27 +4,20 @@ namespace com.clockupstudio.player {
 
         OnUpdate(): void {
 
-            let groundedStatus = false;
-
             this.world.forEach(
-                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults],
-                (_, overlapResults) => {
+                [game.PlayerTag, ut.HitBox2D.HitBoxOverlapResults, ut.Entity],
+                (_, overlapResults, entity) => {
                     overlapResults.overlaps.forEach((v) => {
                         if (this.world.hasComponent(v.otherEntity, game.PlatformTag)) {
-                            groundedStatus = true;
+                            if(this.world.hasComponent(entity, game.Falling)){
+                                this.world.removeComponent(entity, game.Falling);
+                            }
+
+                            if(!this.world.hasComponent(entity, game.Grounded)){
+                                this.world.addComponent(entity, game.Grounded);
+                            }
                         }
                     })
-                }
-            );
-
-            this.SetGroundedStatus(groundedStatus);
-        }
-
-        SetGroundedStatus(status:boolean) {
-            this.world.forEach(
-                [game.PlayerTag, game.UnitStatus],
-                (_, u) => {
-                    u.grounded = status
                 }
             );
         }

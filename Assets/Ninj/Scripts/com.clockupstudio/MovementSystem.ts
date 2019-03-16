@@ -10,7 +10,7 @@ namespace com.clockupstudio {
                     let pos = transformLocalPosition.position
 
                     pos.x += inputDirection.direction.x * movement.speed * dt
-                    pos.y += inputDirection.direction.y * movement.speed
+                    //pos.y += inputDirection.direction.y * movement.speed
 
                     transformLocalPosition.position = pos
                 }
