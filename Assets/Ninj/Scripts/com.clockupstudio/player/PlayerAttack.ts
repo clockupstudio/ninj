@@ -19,10 +19,9 @@ namespace com.clockupstudio.player {
     export class PlayerStartAttackSystem extends ut.ComponentSystem {
 
         OnUpdate(): void {
-            // TODO: cleanup components query.
             this.world.forEach(
-                [game.PlayerTag, game.InputAttack, game.Slash, ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale],
-                (player, inputAttack, slash, transformLocalPosition, transformLocalScale) => {
+                [game.PlayerTag, game.InputAttack, game.Slash],
+                (player, inputAttack, slash) => {
                     if (!inputAttack.pressed) {
                         return;
                     }
