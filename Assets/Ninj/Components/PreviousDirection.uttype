@@ -5,8 +5,28 @@
     "ExportFlags": 0,
     "Unlisted": false,
     "Visibility": 0,
+    "Documentation": {
+        "Summary": "A remember previous direction"
+    },
     "TypeCode": "Component",
+    "Fields": [{
+        "Id": "946f3e5ebff944e4a476a58986b0e5eb",
+        "Name": "direction",
+        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
     "DefaultValue": {
-        "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" }
+        "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" },
+        "Properties": {
+            "direction": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 1
+                }
+            }
+        }
     }
 }]
