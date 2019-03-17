@@ -49,6 +49,7 @@ namespace com.clockupstudio.player {
                     console.log(startAttack.timeLeft, dt)
                     if (startAttack.timeLeft <= 0) {
                         startAttack.showSlashEffect = false;
+                        this.world.removeComponent(player.entity, game.StartAttack);
                         this.world.addComponent(player.entity, game.DoneAttack);
                     }
                     EntityUtil.setActive(this.world, slash.entity, startAttack.showSlashEffect);
@@ -60,9 +61,8 @@ namespace com.clockupstudio.player {
     export class PlayerAttackedSystem extends ut.ComponentSystem {
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, game.StartAttack, game.DoneAttack],
+                [game.PlayerTag, game.DoneAttack],
                 (player, _) => {
-                    this.world.removeComponent(player.entity, game.StartAttack);
                     this.world.removeComponent(player.entity, game.DoneAttack);
                 }
             );
