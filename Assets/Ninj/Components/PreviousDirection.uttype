@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "f5811cefb53d4524960e4cf932c626ce",
+    "Name": "PreviousDirection",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" }
+    }
+}]
