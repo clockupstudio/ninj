@@ -17,23 +17,21 @@ namespace com.clockupstudio.player {
 
                         transform.position = pos
 
-                        if(pos.y > this.jumpLimit){
+                        if (pos.y > this.jumpLimit) {
                             this.beginFall(entity);
                             return;
                         }
                     }
 
-                    if(ut.Runtime.Input.getKeyUp(input.jump)){
+                    if (ut.Runtime.Input.getKeyUp(input.jump)) {
                         this.beginFall(entity);
                     }
                 });
         }
 
         beginFall(entity: ut.Entity): void {
-            this.world.removeComponent(entity, game.Rising);
-            if(!this.world.hasComponent(entity, game.Falling)){
-                this.world.addComponent(entity, game.Falling);
-            }
+            com.clockupstudio.util.EntityUtil.removeComponent(this.world, entity, game.Rising);
+            com.clockupstudio.util.EntityUtil.addComponent(this.world, entity, game.Falling);
         }
     }
 }

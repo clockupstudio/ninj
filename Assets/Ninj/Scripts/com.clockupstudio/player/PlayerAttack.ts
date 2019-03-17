@@ -1,20 +1,6 @@
 
 namespace com.clockupstudio.player {
 
-    export class EntityUtil {
-        static setActive(world: ut.World, entity: ut.Entity, visible: boolean): void {
-            if (visible) {
-                if (world.hasComponent(entity, ut.Disabled)) {
-                    world.removeComponent(entity, ut.Disabled);
-                }
-            } else {
-                if (!world.hasComponent(entity, ut.Disabled)) {
-                    world.addComponent(entity, ut.Disabled);
-                }
-            }
-        }
-    }
-
     @ut.executeAfter(ut.Shared.InputFence)
     export class PlayerStartAttackSystem extends ut.ComponentSystem {
 
@@ -30,7 +16,7 @@ namespace com.clockupstudio.player {
                         this.world.addComponent(player.entity, game.StartAttack);
                         let startAttack = new game.StartAttack();
                         startAttack.timeLeft = 0.5;
-                        EntityUtil.setActive(this.world, slash.entity, true);
+                        com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, true);
                         this.world.setComponentData(player.entity, startAttack);
                     }
                 }
@@ -60,7 +46,7 @@ namespace com.clockupstudio.player {
             this.world.forEach(
                 [game.PlayerTag, game.DoneAttack, game.Slash],
                 (player, _, slash) => {
-                    EntityUtil.setActive(this.world, slash.entity, false);
+                    com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, false);
                     this.world.removeComponent(player.entity, game.DoneAttack);
                 }
             );
