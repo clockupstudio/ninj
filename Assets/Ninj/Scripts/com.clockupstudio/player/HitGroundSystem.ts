@@ -17,6 +17,7 @@ namespace com.clockupstudio.player {
                     }
 
                     if (this.world.getEntityName(contacts[0]) === 'Ground') {
+                        util.EntityUtil.removeComponent(this.world, entity, game.Falling);
                         util.EntityUtil.addComponent(this.world, entity, game.Grounded);
                     }
                 }
