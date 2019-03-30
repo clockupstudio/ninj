@@ -260,7 +260,7 @@
     "$TypeId": 5,
     "Id": "c4a56e19d2b14ebd9326a9fa6ba71904",
     "Name": "BossSpawner",
-    "Enabled": false,
+    "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{

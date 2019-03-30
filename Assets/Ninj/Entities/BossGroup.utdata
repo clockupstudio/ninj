@@ -46,7 +46,7 @@
             "scale": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -1
+                    "x": 1
                 }
             }
         }
@@ -76,6 +76,29 @@
             "speed": 1
         }
     }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -1.5,
+                    "y": -1.5,
+                    "width": 3,
+                    "height": 3
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" },
+        "Properties": {
+            "direction": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": -1
+                }
+            }
+        }
+    }, {
         "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
         "Properties": {
             "speed": 1
@@ -85,8 +108,6 @@
         "Properties": {
             "layer": 1413773243
         }
-    }, {
-        "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" }
     }, {
         "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
     }, {
