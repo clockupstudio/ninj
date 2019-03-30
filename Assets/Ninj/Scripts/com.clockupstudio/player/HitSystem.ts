@@ -24,6 +24,12 @@ namespace com.clockupstudio.player {
                             let damaged = new game.Damaged();
                             damaged.damage = 1
                             this.world.addComponentData(entity, damaged);
+                        } else if (this.world.getEntityName(contact) === 'Ground') {
+                            // game.Grounded always add because it received collision and jump event at
+                            // the same time.
+                            if (!this.world.hasComponent(entity, game.Jumping)) {
+                                util.EntityUtil.addComponent(this.world, entity, game.Grounded);
+                            }
                         }
                     }
                 }
