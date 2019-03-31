@@ -30,6 +30,22 @@
     "Components": [],
     "Instance": {
         "Source": { "$TypeId": 9, "Id": "b89a3c3d7b224094bc34cd9d274ef339", "Name": "Enemy" },
-        "EntityModificationFlags": 0
+        "EntityModificationFlags": 0,
+        "Modifications": [{
+            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+            "Path": "position.x",
+            "TypeCode": 13,
+            "Value": 15
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "size.y",
+            "TypeCode": 13,
+            "Value": 3
+        }, {
+            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+            "Path": "pivot.y",
+            "TypeCode": 13,
+            "Value": 0.67
+        }]
     }
 }]

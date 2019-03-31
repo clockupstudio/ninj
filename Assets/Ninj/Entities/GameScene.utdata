@@ -7,7 +7,6 @@
     "Entities": [
         { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" },
         { "$TypeId": 9, "Id": "dbae7b0ada0a4c0d81770aaed8f6a040", "Name": "Slash" },
-        { "$TypeId": 9, "Id": "ea35d22196bf4395b47d29efaa0a3e95", "Name": "Enemy" },
         { "$TypeId": 9, "Id": "5fb28d91e03d48aab9745f9dc4503c81", "Name": "EnemySpawner" },
         { "$TypeId": 9, "Id": "c4a56e19d2b14ebd9326a9fa6ba71904", "Name": "BossSpawner" },
         { "$TypeId": 9, "Id": "75539a8bf1814fb089562e72218f9abb", "Name": "Lifebar" },
@@ -15,18 +14,6 @@
         { "$TypeId": 9, "Id": "09b805c7f4194d39acfd66e35a36e89e", "Name": "Life_01" },
         { "$TypeId": 9, "Id": "4dc9d2b377e34063a7eecf2edfc11245", "Name": "Life_02" },
         { "$TypeId": 9, "Id": "f12045b8f2d041b9a1cbb82268e84e01", "Name": "Ground" }
-    ],
-    "PrefabInstances": [
-        { "$TypeId": 13, "Id": "c0c4adec6fe448d7aa4aeb3b169f7c3d", "Name": "Enemy" }
-    ]
-},
-{
-    "$TypeId": 12,
-    "Id": "c0c4adec6fe448d7aa4aeb3b169f7c3d",
-    "Name": "Enemy",
-    "Source": { "Id": "60cdccb520aa4d90a8b14c50c2fc4234", "Name": "Enemy" },
-    "Entities": [
-        { "$TypeId": 9, "Id": "ea35d22196bf4395b47d29efaa0a3e95", "Name": "Enemy" }
     ]
 },
 {
@@ -146,12 +133,7 @@
             "entity": { "$TypeId": 9, "Id": "dbae7b0ada0a4c0d81770aaed8f6a040", "Name": "Slash" }
         }
     }, {
-        "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" },
-        "Properties": {
-            "direction": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" }
-            }
-        }
+        "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" }
     }, {
         "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
     }, {
@@ -183,6 +165,8 @@
                 }
             }
         }
+    }, {
+        "Type": { "Id": "8f9dbd5e96524ffebdb28772842983b9", "Name": "PlayerAudioActions" }
     }]
 },
 {
@@ -260,40 +244,6 @@
             }
         }
     }]
-},
-{
-    "$TypeId": 5,
-    "Id": "ea35d22196bf4395b47d29efaa0a3e95",
-    "Name": "Enemy",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 8,
-    "Components": [],
-    "Instance": {
-        "Source": { "$TypeId": 9, "Id": "b89a3c3d7b224094bc34cd9d274ef339", "Name": "Enemy" },
-        "EntityModificationFlags": 0,
-        "Modifications": [{
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.x",
-            "TypeCode": 13,
-            "Value": -3.68
-        }, {
-            "Target": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
-            "Path": "position.y",
-            "TypeCode": 13,
-            "Value": -0.91
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.y",
-            "TypeCode": 13,
-            "Value": 3.09
-        }, {
-            "Target": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-            "Path": "size.x",
-            "TypeCode": 13,
-            "Value": 1.06
-        }]
-    }
 },
 {
     "$TypeId": 5,
