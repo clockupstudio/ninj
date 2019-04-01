@@ -24,6 +24,19 @@ namespace com.clockupstudio.player {
         }
     }
 
+    export class SoundAttackingSystem extends ut.ComponentSystem {
+        OnUpdate(): void {
+            this.world.forEach(
+                [game.PlayerTag, game.StartAttack, game.PlayerAudioActions, ut.Entity],
+                (_, startAttack, audio, entity) => {
+                    util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSource);
+                    this.world.setComponentData(entity, new ut.Audio.AudioSource(audio.slash, 1))
+                    util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSourceStart);
+                }
+            )
+        }
+    }
+
     export class PlayerAttackingSystem extends ut.ComponentSystem {
         OnUpdate(): void {
             const dt = this.world.scheduler().deltaTime();
