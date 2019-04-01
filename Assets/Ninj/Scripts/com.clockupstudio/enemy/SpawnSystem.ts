@@ -2,29 +2,8 @@ namespace com.clockupstudio.enemy {
 
     const bossGroup = 'game.BossGroup'
 
-    function randomSpawnSide(): SpawnSide {
-        return Math.random() > 0.5 ? SpawnSide.Right : SpawnSide.Left;
-    }
-
-    enum SpawnSide {
-        Left = 0,
-        Right
-    }
-
-    const MoveDirection = {
-        Left: new Vector2(-1, 0),
-        Right: new Vector2(1, 0),
-    }
-
-    /**
-     * directionFromSpawnSide set move direction base on spawn side.
-     * @param side which side that enemy spawn.
-     */
-    function directionFromSpawnSide(side: SpawnSide): Vector2 {
-        if (side == SpawnSide.Left) {
-            return MoveDirection.Right;
-        }
-        return MoveDirection.Left;
+    function randomPosition(): number {
+        return Math.random() > 0.5 ? 1 : 0;
     }
 
     /**
@@ -52,10 +31,18 @@ namespace com.clockupstudio.enemy {
                         return;
                     }
 
-                    const side = randomSpawnSide()
+                    const spawnIndex = randomPosition()
+                    const pos = spawner.positions[spawnIndex]
 
                     let dir = new game.InputDirection();
-                    dir.direction = directionFromSpawnSide(side);
+                    switch (spawnIndex) {
+                        case 0:
+                            dir.direction = new Vector2(1, 0);
+                            break;
+                        case 1:
+                            dir.direction = new Vector2(-1, 0);
+                            break;
+                    }
                     this.world.setComponentData(entities[0], dir)
 
                     // set flip direction
@@ -63,12 +50,12 @@ namespace com.clockupstudio.enemy {
                         entities[0],
                         [ut.Core2D.TransformLocalPosition, ut.Core2D.TransformLocalScale],
                         (transformLocalPosition, transformLocalScale) => {
-                            transformLocalPosition.position = spawner.positions[side]
+                            transformLocalPosition.position = pos
                             console.log(`spawn at position: [${transformLocalPosition.position.x},${transformLocalPosition.position.y}]`)
 
                             const scale = transformLocalScale.scale
                             // TODO: should remove after boss sprite got flipped.
-                            if (side === SpawnSide.Left) {
+                            if (spawnIndex === 0) {
                                 if (spawner.group === bossGroup) {
                                     scale.x = scale.x > 0 ? -scale.x : scale.x
                                 } else {
