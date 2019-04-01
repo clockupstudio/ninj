@@ -13,6 +13,3 @@ Logs
 # Visual Stidio
 .vs
 .vscode
-
-# macOS
-.DS_Store
