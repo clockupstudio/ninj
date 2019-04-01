@@ -16,7 +16,7 @@ namespace com.clockupstudio.player {
                         this.world.addComponent(player.entity, game.StartAttack);
                         let startAttack = new game.StartAttack();
                         startAttack.timeLeft = 0.5;
-                        util.EntityUtil.setActive(this.world, slash.entity, true);
+                        com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, true);
                         this.world.setComponentData(player.entity, startAttack);
                     }
                 }
@@ -46,7 +46,7 @@ namespace com.clockupstudio.player {
             this.world.forEach(
                 [game.PlayerTag, game.DoneAttack, game.Slash],
                 (player, _, slash) => {
-                    util.EntityUtil.setActive(this.world, slash.entity, false);
+                    com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, false);
                     this.world.removeComponent(player.entity, game.DoneAttack);
                 }
             );
