@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "3ba71ba5696b4b159356683da8e6e649",
+    "Name": "AudioPlayed",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "3ba71ba5696b4b159356683da8e6e649", "Name": "AudioPlayed" }
+    }
+}]
