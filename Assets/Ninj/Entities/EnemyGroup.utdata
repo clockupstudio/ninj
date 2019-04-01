@@ -37,6 +37,19 @@
             "sprite": { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300000, "Type": 3 }
         }
     }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -0.5,
+                    "y": -0.5,
+                    "width": 1,
+                    "height": 1
+                }
+            }
+        }
+    }, {
         "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
         "Properties": {
             "speed": 1
@@ -88,24 +101,6 @@
                 "Id": "9bd220821203281539749ecc043b64c8",
                 "Name": "Kinematic",
                 "Value": 1
-            }
-        }
-    }, {
-        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
-        "Properties": {
-            "size": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.99,
-                    "y": 2.55
-                }
-            },
-            "pivot": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.41,
-                    "y": 0.65
-                }
             }
         }
     }]

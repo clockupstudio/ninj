@@ -37,7 +37,7 @@ namespace com.clockupstudio.player {
         OnUpdate(world: ut.World): PlayerAnimationState {
             world.forEach(
                 [game.PlayerTag, game.PlayerActions, ut.Core2D.Sprite2DSequence],
-                (_, playerActions, sprite2DSequence, entity) => {
+                (_, playerActions, sprite2DSequence) => {
                     sprite2DSequence.sprites = playerActions.hit;
 
                     setTimeout(() => {
@@ -60,7 +60,7 @@ namespace com.clockupstudio.player {
             world.forEach(
                 [game.PlayerTag, game.UnitStatus],
                 (_, unitStatus) => {
-                    if (unitStatus.damaged == false) {
+                    if( unitStatus.damaged == false ){
                         nextState = new NormalState();
                     }
                 });
