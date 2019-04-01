@@ -1,5 +1,7 @@
 namespace com.clockupstudio.enemy {
 
+    const bossGroup = 'game.BossGroup'
+
     function randomSpawnSide(): SpawnSide {
         return Math.random() > 0.5 ? SpawnSide.Right : SpawnSide.Left;
     }
@@ -65,10 +67,19 @@ namespace com.clockupstudio.enemy {
                             console.log(`spawn at position: [${transformLocalPosition.position.x},${transformLocalPosition.position.y}]`)
 
                             const scale = transformLocalScale.scale
+                            // TODO: should remove after boss sprite got flipped.
                             if (side === SpawnSide.Left) {
-                                scale.x = Math.abs(scale.x);
+                                if (spawner.group === bossGroup) {
+                                    scale.x = scale.x > 0 ? -scale.x : scale.x
+                                } else {
+                                    scale.x = Math.abs(scale.x)
+                                }
                             } else {
-                                scale.x = scale.x > 0 ? -scale.x : scale.x;
+                                if (spawner.group === bossGroup) {
+                                    scale.x = scale.x > 0 ? scale.x : -scale.x
+                                } else {
+                                    scale.x = scale.x > 0 ? -scale.x : scale.x
+                                }
                             }
 
                             transformLocalScale.scale = scale;
