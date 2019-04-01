@@ -31,7 +31,7 @@ namespace com.clockupstudio.player {
 
         beginFall(entity: ut.Entity): void {
             com.clockupstudio.util.EntityUtil.removeComponent(this.world, entity, game.Rising);
-            // com.clockupstudio.util.EntityUtil.addComponent(this.world, entity, game.Falling);
+            com.clockupstudio.util.EntityUtil.addComponent(this.world, entity, game.Falling);
         }
     }
 }
