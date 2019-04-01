@@ -11,7 +11,7 @@ namespace com.clockupstudio.util {
          * @param entity a entity
          * @param visible
          */
-        public static setActive(world: ut.World, entity: ut.Entity, visible: boolean): void {
+        static setActive(world: ut.World, entity: ut.Entity, visible: boolean): void {
             if (visible) {
                 EntityUtil.removeComponent(world, entity, ut.Disabled);
             } else {
@@ -25,7 +25,7 @@ namespace com.clockupstudio.util {
          * @param entity a entity
          * @param component a component needs to add into entity
          */
-        public static addComponent<T>(world: ut.World, entity: ut.Entity, component: ut.ComponentClass<T>) {
+        static addComponent<T>(world: ut.World, entity: ut.Entity, component: ut.ComponentClass<T>) {
             if (!world.hasComponent(entity, component)) {
                 world.addComponent(entity, component);
             }
@@ -37,7 +37,7 @@ namespace com.clockupstudio.util {
          * @param entity a entity
          * @param component a component needs to add into entity
          */
-        public static removeComponent<T>(world: ut.World, entity: ut.Entity, component: ut.ComponentClass<T>) {
+        static removeComponent<T>(world: ut.World, entity: ut.Entity, component: ut.ComponentClass<T>) {
             if (world.hasComponent(entity, component)) {
                 world.removeComponent(entity, component);
             }
