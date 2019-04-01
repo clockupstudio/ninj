@@ -1,4 +1,4 @@
-namespace com.clockupstudio.enemy {
+namespace com.clockupstudio {
 
     const bossGroup = 'game.BossGroup'
 
