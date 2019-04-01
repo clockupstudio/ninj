@@ -152,19 +152,6 @@
         "Type": { "Id": "330ae0c286be4a23aee5a0a2612e8b9f", "Name": "Falling" }
     }, {
         "Type": { "Id": "f5811cefb53d4524960e4cf932c626ce", "Name": "PreviousDirection" }
-    }, {
-        "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
-    }, {
-        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
-        "Properties": {
-            "bodyType": {
-                "$TypeId": 8,
-                "Type": { "Id": "a4afdb83c635db286370870d059ac493", "Name": "BodyType" },
-                "Id": "9bd220821203281539749ecc043b64c8",
-                "Name": "Kinematic",
-                "Value": 1
-            }
-        }
     }]
 },
 {
