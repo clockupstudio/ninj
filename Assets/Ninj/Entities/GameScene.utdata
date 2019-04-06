@@ -225,20 +225,6 @@
         "Type": { "Id": "0e8a356af3d14c96a0bd20922787ea20", "Name": "Spawner" },
         "Properties": {
             "delay": 10,
-            "positions": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Items": [{
-                    "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                    "Properties": {
-                        "x": -10
-                    }
-                }, {
-                    "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                    "Properties": {
-                        "x": 10
-                    }
-                }]
-            },
             "group": "game.EnemyGroup"
         }
     }]
@@ -256,20 +242,6 @@
         "Type": { "Id": "0e8a356af3d14c96a0bd20922787ea20", "Name": "Spawner" },
         "Properties": {
             "delay": 5,
-            "positions": {
-                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                "Items": [{
-                    "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                    "Properties": {
-                        "x": -10
-                    }
-                }, {
-                    "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
-                    "Properties": {
-                        "x": 10
-                    }
-                }]
-            },
             "group": "game.BossGroup"
         }
     }]
