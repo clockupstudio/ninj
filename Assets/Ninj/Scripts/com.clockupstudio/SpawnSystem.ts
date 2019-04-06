@@ -37,18 +37,10 @@ namespace com.clockupstudio {
 
                             const scale = transformLocalScale.scale
                             if (spawnIndex === 0) {
-                                if (spawner.group === bossGroup) {
-                                    scale.x = scale.x > 0 ? -scale.x : scale.x
-                                } else {
-                                    scale.x = Math.abs(scale.x)
-                                }
+                                scale.x = Math.abs(scale.x)
                                 inputDirection.direction = new Vector2(1, 0);
                             } else {
-                                if (spawner.group === bossGroup) {
-                                    scale.x = scale.x > 0 ? scale.x : -scale.x
-                                } else {
-                                    scale.x = scale.x > 0 ? -scale.x : scale.x
-                                }
+                                scale.x = scale.x > 0 ? -scale.x : scale.x
                                 inputDirection.direction = new Vector2(-1, 0);
                             }
 
