@@ -26,6 +26,17 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
+        "Id": "0ddc0a408d47413990f18c967a4fda16",
+        "Name": "positions",
+        "Documentation": {
+            "Summary": "Positions that want to spawn."
+        },
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
         "Id": "8e352e51f3634e34bbb403fd6aba2ae5",
         "Name": "group",
         "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
@@ -37,6 +48,9 @@
     "DefaultValue": {
         "Type": { "Id": "0e8a356af3d14c96a0bd20922787ea20", "Name": "Spawner" },
         "Properties": {
+            "positions": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" }
+            },
             "group": "Entity group that want to spawn."
         }
     }
