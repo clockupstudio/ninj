@@ -28,12 +28,10 @@ namespace com.clockupstudio.player {
         OnUpdate(): void {
             this.world.forEach(
                 [game.PlayerTag, game.StartAttack, game.PlayerAudioActions, ut.Entity],
-                [ut.Subtractive(game.AudioPlayed)],
                 (_, startAttack, audio, entity) => {
                     util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSource);
                     this.world.setComponentData(entity, new ut.Audio.AudioSource(audio.slash, 1))
                     util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSourceStart);
-                    util.EntityUtil.addComponent(this.world, entity, game.AudioPlayed);
                 }
             )
         }
@@ -59,11 +57,10 @@ namespace com.clockupstudio.player {
     export class PlayerAttackedSystem extends ut.ComponentSystem {
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, game.DoneAttack, game.Slash, ut.Entity],
-                (player, _, slash, entity) => {
+                [game.PlayerTag, game.DoneAttack, game.Slash],
+                (player, _, slash) => {
                     com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, false);
                     this.world.removeComponent(player.entity, game.DoneAttack);
-                    util.EntityUtil.removeComponent(this.world, entity, game.AudioPlayed);
                 }
             );
         }
