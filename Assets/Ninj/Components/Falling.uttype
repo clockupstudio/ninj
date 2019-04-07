@@ -1,12 +1,15 @@
 ﻿[{
     "$TypeId": 3,
-    "Id": "330ae0c286be4a23aee5a0a2612e8b9f",
+    "Id": "7fe53512277640b5b8846bf48480d33e",
     "Name": "Falling",
     "ExportFlags": 0,
     "Unlisted": false,
     "Visibility": 0,
+    "Documentation": {
+        "Summary": "Mark player start begin falling."
+    },
     "TypeCode": "Component",
     "DefaultValue": {
-        "Type": { "Id": "330ae0c286be4a23aee5a0a2612e8b9f", "Name": "Falling" }
+        "Type": { "Id": "7fe53512277640b5b8846bf48480d33e", "Name": "Falling" }
     }
 }]

@@ -7,8 +7,6 @@ namespace com.clockupstudio.state {
     export class InitPlay implements GameState {
         OnUpdate(world: ut.World): GameState {
             ut.EntityGroup.instantiate(world, 'game.GameScene');
-            ut.EntityGroup.instantiate(world, 'game.BossGroup');
-            ut.EntityGroup.instantiate(world, 'game.EnemyGroup');
 
             world.forEach([ut.Core2D.Camera2D], (camera) => {
                 camera.backgroundColor = new ut.Core2D.Color(199 / 255, 240 / 255, 216 / 255, 1);

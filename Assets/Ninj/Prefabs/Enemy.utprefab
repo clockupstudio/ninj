@@ -1,0 +1,132 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "996cb3d2ac1846aba914ad0620dee48e",
+    "Name": "Enemy",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "a7f28ffb90d143a693a3cc5b8b95c7c6", "Name": "Enemy" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "a7f28ffb90d143a693a3cc5b8b95c7c6",
+    "Name": "Enemy",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 8,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "d3e83f18fb674d00828dfefde47e8db7", "Name": "Movement" },
+        "Properties": {
+            "speed": 0
+        }
+    }, {
+        "Type": { "Id": "0a3a55f9806d4084b684cfb6e7c10209", "Name": "EnemyTag" }
+    }, {
+        "Type": { "Id": "690a23e86c1e493a8c0273b1c7663ba9", "Name": "InputDirection" },
+        "Properties": {
+            "direction": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": -1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300002, "Type": 3 }
+                ]
+            },
+            "frameRate": 2
+        }
+    }, {
+        "Type": { "Id": "621de9b50db0452ba02e793155c4a1d1", "Name": "EnemyActions" },
+        "Properties": {
+            "dead": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300004, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "43a0763c27da9450ca74198e780db5a5", "FileId": 21300006, "Type": 3 }
+                ]
+            }
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "a7f28ffb90d143a693a3cc5b8b95c7c6", "Name": "Enemy" },
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "layer": -319246013,
+            "order": 4
+        }
+    }, {
+        "Type": { "Id": "4877aebd4079748a17f940cbbee5d2e6", "Name": "Velocity2D" }
+    }, {
+        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
+        "Properties": {
+            "bodyType": {
+                "$TypeId": 8,
+                "Type": { "Id": "a4afdb83c635db286370870d059ac493", "Name": "BodyType" },
+                "Id": "5602293d3c8f73715a64943669328d32",
+                "Name": "Dynamic",
+                "Value": 2
+            }
+        }
+    }, {
+        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.99,
+                    "y": 3
+                }
+            },
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.41,
+                    "y": 0.67
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "d520197343d44a1d9b06974e2d168958", "Name": "UnitStatus" },
+        "Properties": {
+            "health": 1
+        }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "y": -1.7,
+                    "width": 0.41,
+                    "height": 1.8
+                }
+            }
+        }
+    }]
+}]

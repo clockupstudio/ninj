@@ -16,7 +16,7 @@ namespace com.clockupstudio.player {
                         this.world.addComponent(player.entity, game.StartAttack);
                         let startAttack = new game.StartAttack();
                         startAttack.timeLeft = 0.5;
-                        com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, true);
+                        util.EntityUtil.setActive(this.world, slash.entity, true);
                         this.world.setComponentData(player.entity, startAttack);
                     }
                 }
@@ -41,12 +41,25 @@ namespace com.clockupstudio.player {
         }
     }
 
+    export class AttackigSoundSystem extends ut.ComponentSystem {
+        OnUpdate(): void {
+            this.world.forEach(
+                [game.PlayerTag, game.StartAttack, game.PlayerAudioActions, ut.Entity],
+                (_, startAttack, audioActions, entity) => {
+                    util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSource);
+                    this.world.setComponentData(entity, new ut.Audio.AudioSource(audioActions.slash, 1));
+                    util.EntityUtil.addComponent(this.world, entity, ut.Audio.AudioSourceStart);
+                }
+            )
+        }
+    }
+
     export class PlayerAttackedSystem extends ut.ComponentSystem {
         OnUpdate(): void {
             this.world.forEach(
                 [game.PlayerTag, game.DoneAttack, game.Slash],
                 (player, _, slash) => {
-                    com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, false);
+                    util.EntityUtil.setActive(this.world, slash.entity, false);
                     this.world.removeComponent(player.entity, game.DoneAttack);
                 }
             );
