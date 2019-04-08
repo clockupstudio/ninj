@@ -1,13 +1,13 @@
 ﻿[{
     "$TypeId": 3,
-    "Id": "6a3ba780fadc49f0a2e7942849ae498c",
+    "Id": "8f9dbd5e96524ffebdb28772842983b9",
     "Name": "PlayerAudioActions",
     "ExportFlags": 0,
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Component",
     "Fields": [{
-        "Id": "f9c3293a5c1e4ea680a883791a16a389",
+        "Id": "53f1aa0b34f8463f86650398fa288582",
         "Name": "slash",
         "FieldType": { "Id": "1ae8c073dc444f4fb2d3120e5e618326", "Name": "AudioClipEntity" },
         "Array": false,
@@ -16,7 +16,7 @@
         "Versioned": true
     }],
     "DefaultValue": {
-        "Type": { "Id": "6a3ba780fadc49f0a2e7942849ae498c", "Name": "PlayerAudioActions" },
+        "Type": { "Id": "8f9dbd5e96524ffebdb28772842983b9", "Name": "PlayerAudioActions" },
         "Properties": {
             "slash": { "$TypeId": 10, "Guid": "57ca240ed4aa349f49cd161d41077812", "FileId": 8300000, "Type": 3 }
         }
