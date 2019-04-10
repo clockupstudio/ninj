@@ -61,10 +61,7 @@
             "speed": 2
         }
     }, {
-        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" },
-        "Properties": {
-            "entity": { "$TypeId": 9, "Id": "04a03b777af14c38815d73518bdc3d1c", "Name": "Player" }
-        }
+        "Type": { "Id": "11280c81394f4b5ca72560f2e1b313dd", "Name": "PlayerTag" }
     }, {
         "Type": { "Id": "87628cb1af934db09cf2214eb5c32cb1", "Name": "Input" }
     }, {

@@ -6,18 +6,18 @@ namespace com.clockupstudio.player {
 
         OnUpdate(): void {
             this.world.forEach(
-                [game.PlayerTag, game.InputAttack, game.Slash],
-                (player, inputAttack, slash) => {
+                [game.PlayerTag, game.InputAttack, game.Slash, ut.Entity],
+                (_, inputAttack, slash, entity) => {
                     if (!inputAttack.pressed) {
                         return;
                     }
                     console.log(`Pressed attack: ${inputAttack.pressed}`);
-                    if (!this.world.hasComponent(player.entity, game.StartAttack)) {
-                        this.world.addComponent(player.entity, game.StartAttack);
+                    if (!this.world.hasComponent(entity, game.StartAttack)) {
+                        this.world.addComponent(entity, game.StartAttack);
                         let startAttack = new game.StartAttack();
                         startAttack.timeLeft = 0.5;
                         util.EntityUtil.setActive(this.world, slash.entity, true);
-                        this.world.setComponentData(player.entity, startAttack);
+                        this.world.setComponentData(entity, startAttack);
                     }
                 }
             )
@@ -43,13 +43,13 @@ namespace com.clockupstudio.player {
         OnUpdate(): void {
             const dt = this.world.scheduler().deltaTime();
             this.world.forEach(
-                [game.PlayerTag, game.StartAttack],
-                (player, startAttack) => {
+                [game.PlayerTag, game.StartAttack, ut.Entity],
+                (_, startAttack, entity) => {
                     startAttack.timeLeft -= dt;
                     console.log(startAttack.timeLeft, dt)
                     if (startAttack.timeLeft <= 0) {
-                        this.world.removeComponent(player.entity, game.StartAttack);
-                        this.world.addComponent(player.entity, game.DoneAttack);
+                        this.world.removeComponent(entity, game.StartAttack);
+                        this.world.addComponent(entity, game.DoneAttack);
                     }
                 }
             )
@@ -60,10 +60,9 @@ namespace com.clockupstudio.player {
         OnUpdate(): void {
             this.world.forEach(
                 [game.PlayerTag, game.DoneAttack, game.Slash, ut.Entity],
-                (player, _, slash, entity) => {
-                    com.clockupstudio.util.EntityUtil.setActive(this.world, slash.entity, false);
-                    this.world.removeComponent(player.entity, game.DoneAttack);
-                    util.EntityUtil.removeComponent(this.world, entity, game.AudioPlayed);
+                (_, doneAttack, slash, entity) => {
+                    util.EntityUtil.setActive(this.world, slash.entity, false);
+                    this.world.removeComponent(entity, game.DoneAttack);
                 }
             );
         }
