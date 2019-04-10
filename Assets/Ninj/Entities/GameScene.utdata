@@ -157,8 +157,8 @@
             "pivot": {
                 "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
                 "Properties": {
-                    "x": 0.38,
-                    "y": 0.65
+                    "x": 0.46,
+                    "y": 0.5
                 }
             }
         }
